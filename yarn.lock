@@ -23,7 +23,7 @@
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@ant-design/icons/-/icons-4.2.1.tgz#6f3ea5d98ab782072e4e9cbb70f25e4403ae1a6b"
   integrity sha512-245ZI40MOr5GGws+sNSiJIRRoEf/J2xvPSMgwRYf3bv8mVGQZ6XTQI/OMeV16KtiSZ3D+mBKXVYSBz2fhigOXQ==
-  dependencies:
+  dependencies: 
     "@ant-design/colors" "^3.1.0"
     "@ant-design/icons-svg" "^4.0.0"
     "@babel/runtime" "^7.10.1"
