@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #7644ff;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a{
+  color:#ffffff;
+  margin:10px;
+  font-size: 30px;
+}
+.box{
+  text-align: center;
+  z-index: 999;
+  width:50%;
+left:25%;
+  position: absolute;
+  top:50vh;
+
+}body {
+  text-align: center;
+  background-color: #1d1f20;
+}
+.wrapper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 90%;
+  font-size: 0;
+  transform: translate(-50%);
+}
+p {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #eee;
+  opacity: 0.3;
+}
+.letter {
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #eee;
+}
+.letter:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  word-break: break-all;
+  background-color: #1d1f20;
+}
+.letter:nth-child(1):before {
+  content: "6485273910";
+  margin-top: -144px;
+  animation-name: letter1;
+  animation-duration: 3.0514285714s;
+  animation-delay: 0.11s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter1 {
+  from {
+    margin-top: -144px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(2):before {
+  content: "0467285139";
+  margin-top: -96px;
+  animation-name: letter2;
+  animation-duration: 2.784s;
+  animation-delay: 0.13s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter2 {
+  from {
+    margin-top: -96px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(3):before {
+  content: "7925840631";
+  margin-top: -48px;
+  animation-name: letter3;
+  animation-duration: 0.48s;
+  animation-delay: 0.82s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter3 {
+  from {
+    margin-top: -48px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(4):before {
+  content: "6847295310";
+  margin-top: -96px;
+  animation-name: letter4;
+  animation-duration: 1.088s;
+  animation-delay: 0.66s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter4 {
+  from {
+    margin-top: -96px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(5):before {
+  content: "9127834560";
+  margin-top: -216px;
+  animation-name: letter5;
+  animation-duration: 3.24s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter5 {
+  from {
+    margin-top: -216px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(6):before {
+  content: "1906547823";
+  margin-top: -48px;
+  animation-name: letter6;
+  animation-duration: 2.1066666667s;
+  animation-delay: 0.21s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter6 {
+  from {
+    margin-top: -48px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(7):before {
+  content: "8374059261";
+  margin-top: 0px;
+  animation-name: letter7;
+  animation-duration: 0s;
+  animation-delay: 0.56s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter7 {
+  from {
+    margin-top: 0px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(8):before {
+  content: "0316492875";
+  margin-top: -120px;
+  animation-name: letter8;
+  animation-duration: 2.4s;
+  animation-delay: 0.28s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter8 {
+  from {
+    margin-top: -120px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(9):before {
+  content: "9786423051";
+  margin-top: -48px;
+  animation-name: letter9;
+  animation-duration: 2.1333333333s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter9 {
+  from {
+    margin-top: -48px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(10):before {
+  content: "7540921368";
+  margin-top: -216px;
+  animation-name: letter10;
+  animation-duration: 3.492s;
+  animation-delay: 0.03s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter10 {
+  from {
+    margin-top: -216px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(11):before {
+  content: "8426750913";
+  margin-top: -72px;
+  animation-name: letter11;
+  animation-duration: 1.35s;
+  animation-delay: 0.55s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter11 {
+  from {
+    margin-top: -72px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(12):before {
+  content: "6154089273";
+  margin-top: -216px;
+  animation-name: letter12;
+  animation-duration: 1.44s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter12 {
+  from {
+    margin-top: -216px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(13):before {
+  content: "2196853407";
+  margin-top: -120px;
+  animation-name: letter13;
+  animation-duration: 1.6s;
+  animation-delay: 0.52s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter13 {
+  from {
+    margin-top: -120px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(14):before {
+  content: "0214763895";
+  margin-top: -48px;
+  animation-name: letter14;
+  animation-duration: 0.4533333333s;
+  animation-delay: 0.83s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter14 {
+  from {
+    margin-top: -48px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(15):before {
+  content: "9817452603";
+  margin-top: -216px;
+  animation-name: letter15;
+  animation-duration: 2.52s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter15 {
+  from {
+    margin-top: -216px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
+.letter:nth-child(16):before {
+  content: "9604178523";
+  margin-top: -216px;
+  animation-name: letter16;
+  animation-duration: 0.108s;
+  animation-delay: 0.97s;
+  animation-fill-mode: forwards;
+}
+@keyframes letter16 {
+  from {
+    margin-top: -216px;
+ }
+  to {
+    margin-top: 24px;
+ }
+}
