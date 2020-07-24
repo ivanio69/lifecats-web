@@ -15,7 +15,7 @@ function App() {
       </div><div className="box">
 
         <a href="https://github.com/lifecats">
-          <GithubOutlined />
+          <GithubOutlined /> 
         </a>
         <a href="https://www.youtube.com/channel/UCj1RfokacfvbOAoV24CRiqg">
           <YoutubeFilled /></a>

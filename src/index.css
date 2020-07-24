@@ -39,7 +39,7 @@ left:25%;
   top: 40%;
   left: 50%;
   width: 90%;
-  font-size: 0;
+  font-size: 0; 
   transform: translate(-50%);
 }
 p {
