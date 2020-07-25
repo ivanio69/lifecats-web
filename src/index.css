@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 body {
-  
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #7644ff;
@@ -14,34 +10,38 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-a{
-  color:#ffffff;
-  margin:10px;
+
+a {
+  color: #ffffff;
+  margin: 10px;
   font-size: 30px;
 }
-.box{
+
+.box {
   text-align: center;
   z-index: 999;
-  width:90%;
-left:5%;
+  width: 90%;
+  left: 5%;
   position: absolute;
-  top:50vh;
+  top: 50vh;
+}
 
-}body {
+body {
   text-align: center;
   background-color: #1d1f20;
 }
+
 .wrapper {
   position: absolute;
   top: 40%;
   left: 50%;
   width: 90%;
-  font-size: 0; 
+  font-size: 0;
   transform: translate(-50%);
 }
+
 p {
   font-family: sans-serif;
   font-size: 14px;
@@ -49,6 +49,7 @@ p {
   color: #eee;
   opacity: 0.3;
 }
+
 .letter {
   width: 24px;
   display: inline-block;
@@ -63,6 +64,7 @@ p {
   text-transform: uppercase;
   color: #eee;
 }
+
 .letter:before {
   position: absolute;
   top: 0;
@@ -71,6 +73,7 @@ p {
   word-break: break-all;
   background-color: #1d1f20;
 }
+
 .letter:nth-child(1):before {
   content: "6485273910";
   margin-top: -144px;
@@ -79,14 +82,16 @@ p {
   animation-delay: 0.11s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter1 {
   from {
     margin-top: -144px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(2):before {
   content: "0467285139";
   margin-top: -96px;
@@ -95,14 +100,16 @@ p {
   animation-delay: 0.13s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter2 {
   from {
     margin-top: -96px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(3):before {
   content: "7925840631";
   margin-top: -48px;
@@ -111,14 +118,16 @@ p {
   animation-delay: 0.82s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter3 {
   from {
     margin-top: -48px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(4):before {
   content: "6847295310";
   margin-top: -96px;
@@ -127,14 +136,16 @@ p {
   animation-delay: 0.66s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter4 {
   from {
     margin-top: -96px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(5):before {
   content: "9127834560";
   margin-top: -216px;
@@ -143,14 +154,16 @@ p {
   animation-delay: 0.1s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter5 {
   from {
     margin-top: -216px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(6):before {
   content: "1906547823";
   margin-top: -48px;
@@ -159,14 +172,16 @@ p {
   animation-delay: 0.21s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter6 {
   from {
     margin-top: -48px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(7):before {
   content: "8374059261";
   margin-top: 0px;
@@ -175,14 +190,16 @@ p {
   animation-delay: 0.56s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter7 {
   from {
     margin-top: 0px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(8):before {
   content: "0316492875";
   margin-top: -120px;
@@ -191,14 +208,16 @@ p {
   animation-delay: 0.28s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter8 {
   from {
     margin-top: -120px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(9):before {
   content: "9786423051";
   margin-top: -48px;
@@ -207,14 +226,16 @@ p {
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter9 {
   from {
     margin-top: -48px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(10):before {
   content: "7540921368";
   margin-top: -216px;
@@ -223,14 +244,16 @@ p {
   animation-delay: 0.03s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter10 {
   from {
     margin-top: -216px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(11):before {
   content: "8426750913";
   margin-top: -72px;
@@ -239,14 +262,16 @@ p {
   animation-delay: 0.55s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter11 {
   from {
     margin-top: -72px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(12):before {
   content: "6154089273";
   margin-top: -216px;
@@ -255,14 +280,16 @@ p {
   animation-delay: 0.6s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter12 {
   from {
     margin-top: -216px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(13):before {
   content: "2196853407";
   margin-top: -120px;
@@ -271,14 +298,16 @@ p {
   animation-delay: 0.52s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter13 {
   from {
     margin-top: -120px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(14):before {
   content: "0214763895";
   margin-top: -48px;
@@ -287,14 +316,16 @@ p {
   animation-delay: 0.83s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter14 {
   from {
     margin-top: -48px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(15):before {
   content: "9817452603";
   margin-top: -216px;
@@ -303,14 +334,16 @@ p {
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter15 {
   from {
     margin-top: -216px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
+
 .letter:nth-child(16):before {
   content: "9604178523";
   margin-top: -216px;
@@ -319,11 +352,12 @@ p {
   animation-delay: 0.97s;
   animation-fill-mode: forwards;
 }
+
 @keyframes letter16 {
   from {
     margin-top: -216px;
- }
+  }
   to {
     margin-top: 24px;
- }
+  }
 }
