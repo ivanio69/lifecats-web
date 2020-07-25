@@ -17,6 +17,15 @@ a {
   color: #ffffff;
   margin: 10px;
   font-size: 30px;
+  transition: .3s;
+}
+
+.lnk {
+  transition: .3s;
+}
+
+.lnk:hover {
+  transform: translateY(-10px);
 }
 
 .box {
@@ -57,12 +66,17 @@ p {
   position: relative;
   overflow: hidden;
   margin: 0 0;
+  transition: .3s;
   font-family: sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
   color: #eee;
+}
+
+.letter:hover {
+  transform: translateY(-10px);
 }
 
 .letter:before {

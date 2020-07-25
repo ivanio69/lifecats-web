@@ -14,14 +14,14 @@ function App() {
         <p>Some random guy from internet</p>
       </div><div className="box">
 
-        <a href="https://github.com/lifecats">
+        <a className="lnk" href="https://github.com/lifecats">
           <GithubOutlined /> 
         </a>
-        <a href="https://www.youtube.com/channel/UCj1RfokacfvbOAoV24CRiqg">
+        <a className="lnk" href="https://www.youtube.com/channel/UCj1RfokacfvbOAoV24CRiqg">
           <YoutubeFilled /></a>
-        <a href="https://twitter.com/lifecats_of">
+        <a className="lnk" href="https://twitter.com/lifecats_of">
           <TwitterOutlined /></a>
-        <a href="https://www.google.com/search?q=lifecats">
+        <a className="lnk" href="https://www.google.com/search?q=lifecats">
           <GoogleOutlined /></a>
 
       </div>
