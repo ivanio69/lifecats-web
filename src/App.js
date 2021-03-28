@@ -1,48 +1,45 @@
 import React from "react";
-import {
-  GithubOutlined,
-  YoutubeFilled,
-  TwitterOutlined,
-  InstagramOutlined,
-  GoogleOutlined,
-} from "@ant-design/icons";
+import "./fonts.css";
+import { StyleSheet, css } from "aphrodite";
 
+const styles = StyleSheet.create({
+  logo: { color: "#338FFF", fontSize: 60, fontWeight: "600" },
+  center: { width: window.innerWidth > 720 ? "50vw" : "100vw", margin: "auto" },
+});
 function App() {
   return (
-    <div className="App">
-      <div class="wrapper">
-        <div class="letters">
-          <span class="letter">L</span>
-          <span class="letter">I</span>
-          <span class="letter">F</span>
-          <span class="letter">E</span>
-          <span class="letter">C</span>
-          <span class="letter">A</span>
-          <span class="letter">T</span>
-          <span class="letter">S</span>
-        </div>
-        <p>Some random guy from internet</p>
-      </div>
-      <div className="box">
-        <a className="lnk" href="https://github.com/lifecats">
-          <GithubOutlined />
-        </a>
-        <a
-          className="lnk"
-          href="https://www.youtube.com/channel/UCj1RfokacfvbOAoV24CRiqg"
-        >
-          <YoutubeFilled />
-        </a>
-        <a className="lnk" href="https://twitter.com/lifecats_pog">
-          <TwitterOutlined />
-        </a>
-        <a className="lnk" href="https://www.google.com/search?q=lifecats">
-          <GoogleOutlined />
-        </a>
-        <a className="lnk" href="https://instagram.com/lifecats_of">
-          <InstagramOutlined />
-        </a>
-      </div>
+    <div className={css(styles.center)}>
+      <h1 className={css(styles.logo) + " lexend"}>./lifecats</h1>
+      <p className="rm">Welcome to ./lifecats website!</p>
+      <p className="rm">
+        Came here for <a href="/cdn">CDN</a>?
+      </p>
+      <p className="rm">
+        Hi! I am a full stack web developer! Also i write music sometimes.
+        <br />I live in Belarus and stand with{" "}
+        <a href="https://twitter.com/search?q=%23standwithbelarus">
+          #StandWithBelarus
+        </a>{" "}
+        comunity 🤍<span style={{ color: "red" }}>♥️</span>🤍
+      </p>
+      <p className="rm">
+        <a href="https://g.co/kgs/TC3gdg">Google</a>{" "}
+        <a href="https://www.pandora.com/artist/lifecats/burnt-down/ALj7cl332fpJlr2">
+          Pandora
+        </a>{" "}
+        <a href="https://music.apple.com/us/artist/lifecats/1490901435">
+          Apple Music
+        </a>{" "}
+        <a href="https://www.youtube.com/channel/UCj1RfokacfvbOAoV24CRiqg">
+          Youtube
+        </a>{" "}
+        <a href="https://twitter.com/lifecats_pog">Twitter</a>{" "}
+        <a href="https://www.instagram.com/lifecats_of/">Instagram</a>{" "}
+        <a href="https://music.amazon.in/artists/B082J74KW7/lifecats">
+          Amazon Music
+        </a>{" "}
+        <a href="https://github.com/lifecats">Github</a>
+      </p>
     </div>
   );
 }
