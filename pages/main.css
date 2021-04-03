@@ -21,7 +21,7 @@
 }
 
 .logo {
-  color: #338fff;
+  color: #338fff !important;
   font-size: 45px;
   font-weight: 600;
 }
