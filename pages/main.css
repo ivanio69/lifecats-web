@@ -39,7 +39,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #338fff;
+  color: #338fff !important;
   padding: 5px;
 }
 
