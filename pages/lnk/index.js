@@ -28,7 +28,7 @@ export default function Lnk() {
             onSubmit={(e) => {
               e.preventDefault();
               axios
-                .post("http://localhost:8080/api/v1/shorten", {
+                .post("https://cdn.lifecats.cf/api/v1/shorten", {
                   url: e.target[0].value,
                 })
                 .then((r) => {
