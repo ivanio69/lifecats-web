@@ -151,7 +151,7 @@ function App() {
   }, []);
   return (
     <>
-      {" "}
+      <title>./lifecats CDN </title>
       {loggedIn ? (
         <div className="container lexend">
           <h2 className="heding2">My files</h2>
@@ -173,7 +173,6 @@ function App() {
         </div>
       ) : (
         <div className="container lexend">
-          <title>./lifecats </title>
           <h1 className="logo">
             <Link href="/">./lifecats CDN</Link>
           </h1>
