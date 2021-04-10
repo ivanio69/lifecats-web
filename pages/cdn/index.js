@@ -3,6 +3,81 @@ import Link from "next/link";
 import styles from "../overview.module.css";
 import axios from "axios";
 import { useDropzone } from "react-dropzone";
+import {
+  AiOutlineCloudDownload,
+  AiFillCopy,
+  AiFillDelete,
+} from "react-icons/ai";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
+function Item(props) {
+  const [hover, setHover] = React.useState(false);
+  return (
+    <div
+      key={props.e}
+      onMouseEnter={() => {
+        setHover(true);
+      }}
+      onMouseLeave={() => {
+        setHover(false);
+      }}
+      className={styles.item}
+    >
+      {hover ? (
+        <div>
+          <a
+            href={
+              "https://cdn.lifecats.cf/static/" +
+              props.user.name +
+              "/" +
+              props.e
+            }
+            target="_blank"
+          >
+            {" "}
+            <button className={styles.button2}>
+              <AiOutlineCloudDownload />
+            </button>
+          </a>
+          <CopyToClipboard
+            text={
+              "https://cdn.lifecats.cf/static/" +
+              props.user.name +
+              "/" +
+              props.e
+            }
+          >
+            <button className={styles.button2}>
+              <AiFillCopy />
+            </button>
+          </CopyToClipboard>
+          <button
+            onClick={() => {
+              axios
+                .post(
+                  "https://cdn.lifecats.cf/api/v1/remove",
+                  { name: props.e },
+                  {
+                    headers: {
+                      auth: localStorage.getItem("L_TOKEN"),
+                    },
+                  }
+                )
+                .then(() => {
+                  window.location.reload();
+                });
+            }}
+            className={styles.button2 + " " + styles.b2d}
+          >
+            <AiFillDelete />
+          </button>
+        </div>
+      ) : (
+        props.e
+      )}
+    </div>
+  );
+}
 
 function Dropzone() {
   const onDrop = React.useCallback((acceptedFiles) => {
@@ -56,6 +131,7 @@ function App() {
       .then((r) => {
         if (r.data.status === 0) {
           setLoggedIn(false);
+          document.getElementById("butt").style.outline = "2px #00ff00";
         } else {
           setUser(r.data);
           //logged in. proceed to download files
@@ -82,18 +158,7 @@ function App() {
           <div className={styles.filescontainer}>
             {files ? (
               files.map((e) => {
-                return (
-                  <a
-                    target="_blank"
-                    href={
-                      "https://cdn.lifecats.cf/static/" + user.name + "/" + e
-                    }
-                  >
-                    <div key={e} className={styles.item}>
-                      {e}
-                    </div>
-                  </a>
-                );
+                return <Item e={e} user={user} />;
               })
             ) : (
               <>No files here!</>

@@ -15,11 +15,15 @@ function App() {
       </p>
       <p className="rm">
         Hi! I am a full stack web developer! Also i write music sometimes.
-        <br />I live in Belarus and stand with{" "}
+        <br />I live in Belarus (
         <Link href="https://twitter.com/search?q=%23standwithbelarus">
           #StandWithBelarus
         </Link>{" "}
-        comunity 🤍<span style={{ color: "red" }}>♥️</span>🤍
+        🤍<span style={{ color: "red" }}>♥️</span>🤍 )
+      </p>
+      <p className="rm">
+        Also I have 3 years of coding expirience and 4 years of in composing
+        music.
       </p>
       <p className="rm">
         <Link href="https://g.co/kgs/TC3gdg">Google</Link>{" "}

@@ -49,3 +49,22 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+.button2 {
+  border: none;
+  background-color: #51565e;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 19px;
+  transition: 0.3s;
+}
+
+.button2:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.b2d {
+  background-color: #e95035 !important;
+}
