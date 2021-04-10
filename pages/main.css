@@ -13,10 +13,16 @@
     margin: auto;
   }
 }
+.container * {
+  color: #fff;
+}
+*:focus {
+  outline: 0px;
+}
 
 .logo {
-  color: #338fff;
-  font-size: 60px;
+  color: #338fff !important;
+  font-size: 45px;
   font-weight: 600;
 }
 
@@ -28,12 +34,30 @@ body {
 }
 
 .rm {
-  color: #fff;
   font-family: "Roboto Mono", monospace;
 }
 
 a {
   text-decoration: none;
-  color: #338fff;
+  color: #338fff !important;
   padding: 5px;
+}
+
+.heading2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.button {
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  background-color: #338fff;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #338fff;
 }
