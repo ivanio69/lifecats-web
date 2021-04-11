@@ -12,6 +12,9 @@ function App() {
       <p className="rm">Welcome to ./lifecats website!</p>
       <p className="rm">
         Came here for <Link href="/cdn">CDN</Link>?
+      </p>{" "}
+      <p className="rm">
+        <Link href="/lnk">Link Shortener</Link>?
       </p>
       <p className="rm">
         Hi! I am a full stack web developer! Also i write music sometimes.
@@ -27,6 +30,9 @@ function App() {
       </p>
       <p className="rm">
         <Link href="https://g.co/kgs/TC3gdg">Google</Link>{" "}
+        <Link href="https://open.spotify.com/artist/7M9VNbwTIQBVDIeamFHC0a?si=hwK57LabQvqoMssgrLWcEA">
+          Spotify
+        </Link>{" "}
         <Link href="https://www.pandora.com/artist/lifecats/burnt-down/ALj7cl332fpJlr2">
           Pandora
         </Link>{" "}
