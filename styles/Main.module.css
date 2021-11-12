@@ -1,0 +1,24 @@
+/* Header */
+
+.header {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding:10px 20px;
+  backdrop-filter: bulr(5px);
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color:#4786FF;
+    flex-grow: 1;
+}
+
+.header a{
+    display: inline-block;
+    margin: 25px;
+}

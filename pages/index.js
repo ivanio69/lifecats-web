@@ -13,7 +13,14 @@ export default function Main() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main></main>
+      <main>
+        <header className={styles.header}>
+          <h1>./lifecats</h1>
+          <a>Home</a>
+          <a>Link Shortener</a>
+          <div></div>
+        </header>
+      </main>
     </div>
   );
 }
