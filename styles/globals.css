@@ -13,10 +13,17 @@ a {
 
 * {
   box-sizing: border-box;
-  --text-color: #000;
-  --background-color: #fff;
 }
 
 body {
   background: var(--background-color);
+  --text-color: #000;
+  --background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: #fff !important;
+    --background-color: #424447 !important;
+  }
 }

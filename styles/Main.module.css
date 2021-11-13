@@ -41,6 +41,7 @@
   font-weight: 800;
   font-size: 24px;
   margin: 0;
+  color: var(--text-color);
 }
 
 .container1 .titleBox {
@@ -68,7 +69,31 @@
 
 .container1 .buttons button:hover {
   transform: translateY(-10px);
-  color: #000;
-  background: #fff;
+  color: var(--text-color);
+  background: transparent;
   cursor: pointer;
+}
+
+/* Container 2 */
+
+.container2 h1 {
+  font-size: 18px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.container2 ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.container2 ul li {
+  display: inline-block;
+
+  margin: 10px 0 ;
+  padding: 0;
 }
