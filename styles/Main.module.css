@@ -77,7 +77,7 @@
 /* Container 2 */
 
 .container2 h1 {
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
   color: var(--text-color);
 }
@@ -93,7 +93,43 @@
 
 .container2 ul li {
   display: inline-block;
-
-  margin: 10px 0 ;
+  margin: 10px 0;
   padding: 0;
+}
+
+/* Container 3 */
+
+.container3 h1 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.container3 ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.container3 ul li {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  transition: 0.3s;
+  font-weight: 800;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container3 ul li:hover {
+  transform: translateY(-10px);
+  background: transparent !important;
+  color: var(--text-color);
 }

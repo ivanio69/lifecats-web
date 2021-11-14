@@ -72,6 +72,50 @@ export default function Main() {
             </li>
           </ul>
         </div>
+
+        <div className={styles.container3}>
+          <h1>My music:</h1>
+          <ul>
+            <li
+              onClick={() => (window.location.href = "https://open.spotify.com/artist/7M9VNbwTIQBVDIeamFHC0a?si=Dxjz4DoQTmyifFKWhkZ5mQ")}
+              style={{ background: "#00AE70" }}
+            >
+              Spotify
+            </li>
+            <li
+              onClick={() => (window.location.href = "https://www.deezer.com/en/artist/80732582")}
+              style={{ background: "#98C1FF" }}
+            >
+              Deezer
+            </li>
+            <li
+              onClick={() => (window.location.href = "https://www.amazon.com/s?k=LIFECATS&i=digital-music&search-type=ss&ref=ntt_srch_drd_B082J74KW7")}
+              style={{ background: "#98C1FF" }}
+            >
+              Amazon
+            </li>
+          </ul>
+          <ul>
+            <li
+              onClick={() => (window.location.href = "https://music.apple.com/us/artist/lifecats/1490901435")}
+              style={{ background: "#FF98C9" }}
+            >
+              Apple Music
+            </li>
+            <li
+              onClick={() => (window.location.href = "https://www.youtube.com/channel/UC8bH0TTHLDCFvVZXXP2_Scw")}
+              style={{ background: "#FF9898" }}
+            >
+              Youtube
+            </li>
+            <li
+              onClick={() => (window.location.href = "https://www.pandora.com/artist/lifecats/burnt-down/ALj7cl332fpJlr2")}
+              style={{ background: "#98C1FF" }}
+            >
+              Pandora
+            </li>
+          </ul>
+        </div>
       </main>
     </div>
   );
