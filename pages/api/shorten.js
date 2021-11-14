@@ -1,12 +1,8 @@
-const mongoose = require("mongoose");
-const Link = mongoose.model("link", { link: String, slug: String });
+import { mongoose, Link } from "./mongo";
 
 export default function handler(req, res) {
   if (req.query.link !== undefined) {
     console.log(req.query.link);
-    // connect mongo
-    mongoose.connect(process.env.MONGO_URI);
-
     // generate slug
     const generateSlug = () => {
       let chars = "abcdefghijklmnopqrstuvwxyz";
