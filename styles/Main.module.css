@@ -1,3 +1,25 @@
+@keyframes down {
+  from {
+    opacity: 0;
+    transform: translate(0, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes left {
+  from {
+    opacity: 0;
+    transform: translate(10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+}
+
 /* Header */
 
 .header {
@@ -9,6 +31,7 @@
   justify-content: space-evenly;
   padding: 10px 20px;
   backdrop-filter: blur(5px);
+  animation: down 0.4s;
 }
 
 .header h1 {
@@ -47,8 +70,15 @@
 .container1 .titleBox {
   margin-top: 100px;
 }
+
+.titleBlack {
+  animation: down 0.4s 0.5s;
+  animation-fill-mode: both;
+}
 .container1 .titleBlue {
   color: #4786ff;
+  animation: down 0.4s 0.8s;
+  animation-fill-mode: both;
 }
 
 /* Buttons */
@@ -65,6 +95,8 @@
   display: inline-block;
   width: 300px;
   transition: 0.3s;
+  animation: left 0.4s 1s;
+  animation-fill-mode: both;
 }
 
 .container1 .buttons button:hover {
@@ -75,6 +107,11 @@
 }
 
 /* Container 2 */
+
+.container2 {
+  animation: down 0.4s 1.4s;
+  animation-fill-mode: both;
+}
 
 .container2 h1 {
   font-size: 24px;
@@ -98,6 +135,11 @@
 }
 
 /* Container 3 */
+
+.container3 {
+  animation: down 0.4s 1.8s;
+  animation-fill-mode: both;
+}
 
 .container3 h1 {
   font-size: 24px;
