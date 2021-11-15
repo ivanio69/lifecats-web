@@ -15,6 +15,13 @@ And finaly, start development version by running `npm run dev`
 
 ## Trid party services
 
-- NextAuth provides: google
 - MongoDB
 - Vercel
+
+## How does client link saving work
+
+When you already saved any link, it will automaticly save in your browser, using `localStorage` API. 
+
+However this saving is tied to only one browser. So in case of using different browser on same machine, saves will not presist on both browsers.
+
+Check MDN on `localStorage` to learn more
