@@ -176,7 +176,9 @@
   color: var(--text-color);
 }
 
+
 .container4 .ad {
+  color:var(--text-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
