@@ -1,8 +1,39 @@
 import Head from "next/head";
+import { useState } from "react";
 import styles from "../styles/Main.module.css";
 import Card from "./_card";
 
 export default function Main() {
+  const [longLink, setLongLink] = useState("");
+  const linksSaved = process.browser
+    ? JSON.parse(localStorage.getItem("savedLinks"))
+    : undefined;
+  const shorten = () => {
+    fetch(`/api/shorten?link=${longLink}`).then((r) => {
+      r.json().then((resp) => {
+        console.log(resp);
+        let slug = resp.slug;
+        if (resp.slug !== undefined) {
+          if (localStorage.getItem("savedLinks") > null)
+            localStorage.setItem(
+              "savedLinks",
+              JSON.parce(localStorage.getItem("savedLinks")).push({
+                lingLink,
+                slug,
+              })
+            );
+          else
+            localStorage.setItem(
+              "savedLinks",
+              JSON.stringify([{ longLink, slug }])
+            );
+          window.location.reload();
+        } else {
+          alert("Something went wrong, try again later!");
+        }
+      });
+    });
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -77,19 +108,28 @@ export default function Main() {
           <h1>My music:</h1>
           <ul>
             <li
-              onClick={() => (window.location.href = "https://open.spotify.com/artist/7M9VNbwTIQBVDIeamFHC0a?si=Dxjz4DoQTmyifFKWhkZ5mQ")}
+              onClick={() =>
+                (window.location.href =
+                  "https://open.spotify.com/artist/7M9VNbwTIQBVDIeamFHC0a?si=Dxjz4DoQTmyifFKWhkZ5mQ")
+              }
               style={{ background: "#00AE70" }}
             >
               Spotify
             </li>
             <li
-              onClick={() => (window.location.href = "https://www.deezer.com/en/artist/80732582")}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.deezer.com/en/artist/80732582")
+              }
               style={{ background: "#98C1FF" }}
             >
               Deezer
             </li>
             <li
-              onClick={() => (window.location.href = "https://www.amazon.com/s?k=LIFECATS&i=digital-music&search-type=ss&ref=ntt_srch_drd_B082J74KW7")}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.amazon.com/s?k=LIFECATS&i=digital-music&search-type=ss&ref=ntt_srch_drd_B082J74KW7")
+              }
               style={{ background: "#98C1FF" }}
             >
               Amazon
@@ -97,24 +137,74 @@ export default function Main() {
           </ul>
           <ul>
             <li
-              onClick={() => (window.location.href = "https://music.apple.com/us/artist/lifecats/1490901435")}
+              onClick={() =>
+                (window.location.href =
+                  "https://music.apple.com/us/artist/lifecats/1490901435")
+              }
               style={{ background: "#FF98C9" }}
             >
               Apple Music
             </li>
             <li
-              onClick={() => (window.location.href = "https://www.youtube.com/channel/UC8bH0TTHLDCFvVZXXP2_Scw")}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.youtube.com/channel/UC8bH0TTHLDCFvVZXXP2_Scw")
+              }
               style={{ background: "#FF9898" }}
             >
               Youtube
             </li>
             <li
-              onClick={() => (window.location.href = "https://www.pandora.com/artist/lifecats/burnt-down/ALj7cl332fpJlr2")}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.pandora.com/artist/lifecats/burnt-down/ALj7cl332fpJlr2")
+              }
               style={{ background: "#98C1FF" }}
             >
               Pandora
             </li>
           </ul>
+        </div>
+
+        <div className={styles.container4}>
+          <div className={styles.ad}>
+            <h2>Try this link shorterer from lifecats!</h2>
+            <div className={styles.input}>
+              <input
+                type="url"
+                required
+                onChange={(e) => {
+                  setLongLink(e.target.value);
+                }}
+                placeholder="http://enter-your.very/long/link?here"
+              />
+              <button
+                onClick={() => {
+                  shorten();
+                }}
+              >
+                Shorten!
+              </button>
+            </div>
+          </div>
+          <div className={styles.saved}>
+            {process.browser ? (
+              localStorage.getItem("savedLinks").length !== 0 ? (
+                <>
+                  {linksSaved.map((e) => {
+                    return (
+                      <div key={e.slug} className={styles.linkCard}>
+                        <h2>lifecats.codes/lnk/<span>{e.slug}</span></h2>
+                        <span>Leads to <a href={e.longLink}>{e.longLink}</a></span>
+                      </div>
+                    );
+                  })}
+                </>
+              ) : (
+                <p>You didn&apos;t try that new link shortener from lifecats yet!</p>
+              )
+            ) : null}
+          </div>
         </div>
       </main>
     </div>
