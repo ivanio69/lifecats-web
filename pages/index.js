@@ -189,7 +189,7 @@ export default function Main() {
           </div>
           <div className={styles.saved}>
             {process.browser ? (
-              localStorage.getItem("savedLinks").length !== 0 ? (
+              localStorage.getItem("savedLinks") !== null ? (
                 <>
                   {linksSaved.map((e) => {
                     return (
