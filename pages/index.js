@@ -193,7 +193,7 @@ export default function Main() {
                 <>
                   {linksSaved.map((e) => {
                     return (
-                      <div className={styles.linkCard}>
+                      <div key={e.slug} className={styles.linkCard}>
                         <h2>lifecats.codes/lnk/<span>{e.slug}</span></h2>
                         <span>Leads to <a href={e.longLink}>{e.longLink}</a></span>
                       </div>
@@ -201,7 +201,7 @@ export default function Main() {
                   })}
                 </>
               ) : (
-                <p>You didn't try that new link shortener from lifecats yet!</p>
+                <p>You didn&apos;t try that new link shortener from lifecats yet!</p>
               )
             ) : null}
           </div>
