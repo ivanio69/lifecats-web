@@ -5,8 +5,7 @@ const Post = () => {
   const { lnk } = router.query
   if (process.browser)
   if (lnk !== undefined)  
-  console.log(lnk)
-    window.location.replace('/api/recive?slug='+lnk)
+  window.location.replace('/api/recive?slug='+lnk)
   return true;
 }
 
