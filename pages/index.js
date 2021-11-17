@@ -14,15 +14,15 @@ export default function Main() {
         console.log(resp);
         let slug = resp.slug;
         if (resp.slug !== undefined) {
-          if (localStorage.getItem("savedLinks") > null)
-            localStorage.setItem(
-              "savedLinks",
-              JSON.parce(localStorage.getItem("savedLinks")).push({
-                lingLink,
-                slug,
-              })
-            );
-          else
+          if (localStorage.getItem("savedLinks") !== null) {
+            let newArray = JSON.parse(localStorage.getItem("savedLinks"))
+            newArray.push({
+              longLink,
+              slug,
+            });
+
+            localStorage.setItem("savedLinks", JSON.stringify(newArray));
+          } else
             localStorage.setItem(
               "savedLinks",
               JSON.stringify([{ longLink, slug }])
@@ -194,14 +194,20 @@ export default function Main() {
                   {linksSaved.map((e) => {
                     return (
                       <div key={e.slug} className={styles.linkCard}>
-                        <h2>lifecats.codes/lnk/<span>{e.slug}</span></h2>
-                        <span>Leads to <a href={e.longLink}>{e.longLink}</a></span>
+                        <h2>
+                          lifecats.codes/lnk/<span>{e.slug}</span>
+                        </h2>
+                        <span>
+                          Leads to <a href={e.longLink}>{e.longLink}</a>
+                        </span>
                       </div>
                     );
                   })}
                 </>
               ) : (
-                <p>You didn&apos;t try that new link shortener from lifecats yet!</p>
+                <p>
+                  You didn&apos;t try that new link shortener from lifecats yet!
+                </p>
               )
             ) : null}
           </div>

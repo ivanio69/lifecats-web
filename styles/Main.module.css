@@ -176,9 +176,8 @@
   color: var(--text-color);
 }
 
-
 .container4 .ad {
-  color:var(--text-color);
+  color: var(--text-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -224,11 +223,11 @@
   text-align: center;
 }
 
-.container4 .saved{
+.container4 .saved {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin:20px
+  margin: 20px;
 }
 
 .container4 .saved .linkCard {
@@ -236,9 +235,11 @@
   color: #fff;
   border-radius: 15px;
   max-width: 400px;
-  padding:15px 
+  padding: 15px;
+  word-wrap: break-word;
+  margin:20px;
 }
 
-.container4 .saved .linkCard h2 span{
+.container4 .saved .linkCard h2 span {
   font-size: 32px;
 }
