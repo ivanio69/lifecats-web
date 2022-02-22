@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
 
-html,
-body {
-  padding: 0;
-  margin: 0;
+html {
+  background: #000;
   font-family: "DM Sans", sans-serif;
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
