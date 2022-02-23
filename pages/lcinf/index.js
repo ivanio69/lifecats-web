@@ -1,5 +1,5 @@
 import styles from "../../styles/lcinf.module.css";
-
+import Link from "next/link";
 export default function LCINF() {
   return (
     <>
@@ -14,10 +14,10 @@ export default function LCINF() {
             hosting? Try ours! It's free!
           </p>
           <p>99.9% uptime</p>
-          <a href="/contact">
+          <Link href="/contact">
             {" "}
             <button className={styles.button}>Get in contact</button>
-          </a>
+          </Link>
         </div>
       </div>
     </>
