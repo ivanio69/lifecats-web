@@ -15,7 +15,6 @@ export default function LCINF() {
           </p>
           <p>99.9% uptime</p>
           <Link href="/contact">
-            {" "}
             <button className={styles.button}>Get in contact</button>
           </Link>
         </div>
