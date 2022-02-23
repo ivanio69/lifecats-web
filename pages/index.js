@@ -15,10 +15,10 @@ export default function Home() {
           <a href="/cloud">Cloud Storage</a>
         </li>
         <li>
-          <a href="/cloud">Link Shortener</a>
+          <a href="/lnk">Link Shortener</a>
         </li>
         <li>
-          <a href="/cloud">LCINF</a>
+          <a href="/lcinf">LCINF</a>
         </li>
       </ul>
     </div>
