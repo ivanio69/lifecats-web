@@ -17,7 +17,6 @@
   position: absolute;
   background: #151723;
   z-index: -1;
-  color: #fff; /**/
   filter: blur(250px);
 }
 

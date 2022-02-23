@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -12,13 +13,13 @@ export default function Home() {
       <h1 className={styles.title}>lifecats</h1>
       <ul className={styles.menu}>
         <li>
-          <a href="/cloud">Cloud Storage</a>
+          <Link href="/cloud">Cloud Storage</Link>
         </li>
         <li>
-          <a href="/cloud">Link Shortener</a>
+          <Link href="/lnk">Link Shortener</Link>
         </li>
         <li>
-          <a href="/cloud">LCINF</a>
+          <Link href="/lcinf">LCINF</Link>
         </li>
       </ul>
     </div>

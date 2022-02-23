@@ -1,0 +1,25 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.title {
+  color: #3491ff;
+  margin-bottom: 20px;
+}
+
+.dscr {
+  padding-left: 10vw;
+  padding-top: 30vh;
+}
+
+.button {
+  text-align: center;
+  border: none;
+  background-color: #3491ff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 20px;
+}

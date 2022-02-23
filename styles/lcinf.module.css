@@ -1,0 +1,33 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+  text-align: center;
+}
+
+.title {
+  padding-top: 35vh;
+  color: #1c82ff;
+  padding-bottom: 20px;
+  font-size: 3rem;
+}
+
+.button {
+  text-align: center;
+  border: none;
+  background-color: #3491ff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.dscr p {
+  margin: 10px;
+}
+
+.button:hover {
+  transform: scale(110%);
+}
