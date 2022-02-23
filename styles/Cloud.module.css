@@ -23,3 +23,93 @@
   display: inline-block;
   margin-top: 20px;
 }
+
+/* autheticated part */
+
+.titlebar {
+  width: 100vw;
+  padding: 10px;
+  border-bottom: 2px rgba(0, 0, 0, 0.03) solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titlebar .name {
+  display: flex;
+  align-content: center;
+}
+
+.titlebar .name h2 {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.titlebar .name .cloud {
+  color: #3491ff;
+  padding-right: 0.5rem;
+}
+
+.titlebar span {
+  padding-right: 10px;
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+}
+
+.file {
+  border: transparent 0px solid;
+}
+
+.file,
+.newFile {
+  margin: 15px;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.newFile {
+  border: rgba(0, 0, 0, 0.03) 2px dashed;
+  background: transparent;
+}
+.file span,
+.newFile span {
+  padding-bottom: 20px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.file .icon {
+  color: #3491ff;
+}
+
+.newFile .icon {
+  color: rgb(202, 202, 202);
+}
+
+.file:hover {
+  cursor: pointer;
+  background: transparent;
+  border: rgba(0, 0, 0, 0.03) 5px solid;
+}
+
+.newFile:hover {
+  cursor: pointer;
+  background: #3491ff;
+  border: #3491ff 5px dashed;
+}
+
+.newFile:hover * {
+  color: #fff;
+}
