@@ -11,7 +11,7 @@ export default function LCINF() {
           </p>
           <p>
             Need to host a website, but you dont want to spend loads of money on
-            hosting? Try ours! It's free!
+            hosting? Try ours! It&#39;s free!
           </p>
           <p>99.9% uptime</p>
           <Link href="/contact">
